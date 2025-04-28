@@ -13,7 +13,8 @@ function App() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/generate", {
+      const res = await axios.post('https://english-practice-backend.onrender.com/generate', {
+
         mistake,
         type,
       });
@@ -27,7 +28,7 @@ function App() {
     }
   };
 
-  // Helper to separate Explanation and Exercises
+  
   const renderExercise = () => {
     if (!exercise) return null;
 
